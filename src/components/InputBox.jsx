@@ -16,11 +16,11 @@ const InputBox = ({
                     type={type}
                     name={name}
                     required={required}
-                    className="w-full px-4 py-2 border rounded-lg mt-1"
+                    className="h-[40px] w-full px-4 py-2 border rounded-lg mt-1"
                     placeholder={placeholder}
                 />
             ) : (
-                <select className="w-full rounded-lg border px-4 py-2 mt-1">
+                <select className="h-[40px] w-full rounded-lg border px-4 py-2 mt-1">
                     {children}
                 </select>
             )}

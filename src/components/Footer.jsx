@@ -18,7 +18,7 @@ const Footer = () => {
                                     <a>Menu</a>
                                 </li>
                                 <li>
-                                    <a>Reserve a Table</a>
+                                    <a href='/reservation'>Reserve a Table</a>
                                 </li>
                             </ul>
                         </li>

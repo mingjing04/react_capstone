@@ -1,6 +1,14 @@
 import React from "react";
 import Button from "./LemonButton";
+import { useNavigate } from "react-router-dom";
+
 const Landing = () => {
+    const navigate = useNavigate();
+    
+    const handleReserveClick = () => {
+        navigate('/reservation');
+    };
+    
     return (
         <div className="bg-lemon-green w-full flex h-screen flex-col-reverse md:h-[500px] md:flex-row">
             <div className="md:basis-1/3 px-5 flex flex-col justify-around text-white">
@@ -12,7 +20,7 @@ const Landing = () => {
                     dolores harum.
                 </p>
                 <div className="self-end m-10">
-                    <Button variant="primary">
+                    <Button onClick={handleReserveClick} variant="primary">
                         Reserve a Table
                     </Button>
                 </div>
